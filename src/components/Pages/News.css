@@ -1,0 +1,42 @@
+.news-card{    
+    height: 480px;
+}
+.provider-name{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.ant-row{
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+
+p{
+    color: black;
+    padding-top: 10px;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+.svg-image{
+    display: block;
+  margin-left: 30%;
+  margin-right: auto;
+  width: 34%;
+}
+@media (max-width:500px){
+    .news-card{
+        height: 500px;
+    }
+    .svg-image{
+        width: 66%;
+        margin-left: 16%;
+    }
+}
+
+.spacing-bottom{
+    padding-top: 20px;
+}

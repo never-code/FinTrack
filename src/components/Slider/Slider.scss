@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.slider-container{
+  height: max-content;
+  width: 100%;
+  background: var(--app-background);
+  border-radius: 10px;
+  padding: 0 65px 0 45px;
+}
+.field{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  height: 30px;
+}
+.field .value{
+  position: absolute;
+  font-size: 18px;
+  color: gray;
+  font-weight: 600;
+}
+.field .value.min{
+  left: -22px;
+}
+.field .value.max{
+  right: -43px;
+}
+.slider-container input{
+  -webkit-appearance: none;
+  width: 100%;
+  height: 3px;
+  background: var(--slider-color);
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  z-index: 2222;
+}
+.slider-container input:focus {
+  background-color: #2196F3;
+}
+.slider-container input::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: gray;
+  border: 2px solid var(--text-color);
+  cursor: pointer;
+}
+.slider-container input:focus::-webkit-slider-thumb{
+  background-color: blue;
+}
+.slider-container input::-moz-slider-container-thumb{
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: gray;
+  border: 1px solid var(--text-color);
+  cursor: pointer;
+}
+.slider-container input::-moz-slider-container-progress{
+  background: var(--text-color); //this progress background is only shown on Firefox
+}
+
+.selected-value {
+  .value {
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    display: inline-block;
+    height: 70px;
+    padding-top: 4px;
+  }
+  .unit {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    display: inline-block;
+  }
+}

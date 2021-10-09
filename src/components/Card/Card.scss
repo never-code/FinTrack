@@ -1,0 +1,51 @@
+.card-container {
+  height: 150px;
+  width: 350px;
+  border: 3px solid var(--text-color);
+  border-radius: 15px;
+  justify-content: unset;
+  padding: 20px;
+  // margin: auto;
+  margin-bottom: 3%;
+  .title {
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    height: 30px;
+  }
+  .sub-title {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .value {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+.emi {
+  background-color: #66DCC1;
+  color: white;
+}
+.interest {
+  color: #0170F3;
+  background-color: #FBD94F;
+}
+.total {
+  background-color: #0170F3;
+  color: white;
+}
+@media only screen and (max-width: 300px) {
+  .card-container {
+    width: 200px;
+    height: 100px;
+    .title {
+      font-size: 12px;
+    }
+    .value {
+      font-size: 16px;
+    }
+  }
+}

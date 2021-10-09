@@ -1,0 +1,51 @@
+
+.front-page-box{
+    margin: auto;
+   width: 60%;
+   padding: 10px;
+}
+.heading{
+    font-size: 3.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 30px;
+    text-align: left;
+    line-height: 1.2em;
+    margin-top: 1em;
+    color: rgb(102, 102, 102);
+}
+.heading::after{
+    display: block;
+    content: " ";
+    width: 2em;
+    height: 3px;
+    margin-top: 0.15em;
+    margin-bottom: 1em;
+    background-color: rgb(102, 102, 102);
+}
+
+.svg-imagee{
+    display: block;
+  margin-left: 37%;
+  margin-right: auto;
+  width: 25%;
+  padding-top: 30px;
+}
+
+@media (max-width:580px){
+    .svg-imagee{
+        width: 66%;
+        margin-left: 16%;
+    }
+}
+
+.spacing{
+    padding-top: 40px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+p{
+    font-size: 1.5em;
+    font-family: 'Roboto Slab', serif;
+    padding-bottom: 0%;
+}

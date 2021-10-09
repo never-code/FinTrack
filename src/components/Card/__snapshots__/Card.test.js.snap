@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header  should render successfully 1`] = `
+<div>
+  <div
+    class="card-container test"
+  >
+    <div
+      class="title"
+    >
+      Card Title
+    </div>
+    <div
+      class="sub-title"
+    >
+      <span>
+        This is Subtitle
+      </span>
+    </div>
+    <div
+      class="value"
+    >
+      123123123123
+    </div>
+  </div>
+</div>
+`;

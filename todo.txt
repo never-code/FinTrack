@@ -1,0 +1,10 @@
+Landing page: 
+            CAROUSEL(Siddharth Soni: 5 Images regarding investment)
+            BRIEFING REGARDING APPS & WEBSITE(Raghav Somani)
+
+Blog Page:
+          Blog Layout and By using API(APIs of Cryto news & investment news ) : Shaival Paradkar
+
+Contact Page:
+          A Basic Contact Layout for contacting us. (Just for showing!!)
+          

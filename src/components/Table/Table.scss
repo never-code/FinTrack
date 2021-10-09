@@ -1,0 +1,23 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+.year {
+  background-color: #fbd94eed;
+  color: #0170f3;
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+}
+thead {
+  background: #0170f3;
+  color: var(--app-background);
+  letter-spacing: 2px;
+}
+td, th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+}

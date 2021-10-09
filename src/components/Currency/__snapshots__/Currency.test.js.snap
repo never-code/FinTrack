@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SliderContainer  should render successfully 1`] = `
+<div>
+  <div
+    class="currency-container"
+  >
+    <span>
+      🧠
+    </span>
+    <select
+      name="Currency"
+    >
+      <option
+        value="INR"
+      >
+        INR
+      </option>
+      <option
+        value="USD"
+      >
+        USD
+      </option>
+      <option
+        value="EUR"
+      >
+        EUR
+      </option>
+    </select>
+  </div>
+</div>
+`;

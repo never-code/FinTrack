@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header  should render successfully 1`] = `
+<div>
+  <div
+    class="footer-container"
+  >
+    Made by
+    <a
+      href="https://suhas010.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+      Suhas010
+    </a>
+    🤓
+    <div
+      class="follow"
+    >
+      <a
+        href="https://twitter.com/suhas0101"
+        rel="noreferrer"
+        target="_blank"
+      >
+        Twitter
+      </a>
+      <a
+        href="https://linkedin.com/in/suhas-more"
+        rel="noreferrer"
+        target="_blank"
+      >
+        LinkeIn
+      </a>
+      <a
+        href="https://github.com/suhas010"
+        rel="noreferrer"
+        target="_blank"
+      >
+        GitHub
+      </a>
+    </div>
+  </div>
+</div>
+`;

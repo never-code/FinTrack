@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SliderComponent  should render successfully 1`] = `
+<div>
+  <div
+    class="slider-container"
+  >
+    <div
+      class="selected-value"
+    >
+      <span
+        class="value"
+      />
+    </div>
+    <div
+      class="field"
+    >
+      <div
+        class="value min"
+      />
+      <input
+        type="range"
+        value=""
+      />
+      <div
+        class="value max"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SliderContainer  should render successfully 1`] = `
+<div>
+  <div
+    class="slider-container"
+  >
+    <div
+      class="selected-value"
+    >
+      <span
+        class="value"
+      />
+    </div>
+    <div
+      class="field"
+    >
+      <div
+        class="value min"
+      />
+      <input
+        type="range"
+        value=""
+      />
+      <div
+        class="value max"
+      />
+    </div>
+  </div>
+</div>
+`;

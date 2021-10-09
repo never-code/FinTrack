@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table  should render successfully 1`] = `
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Month
+        </th>
+        <th>
+          Principal
+        </th>
+        <th>
+          Interest
+        </th>
+        <th>
+          Principal + Interest
+        </th>
+        <th>
+          Balance
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;
