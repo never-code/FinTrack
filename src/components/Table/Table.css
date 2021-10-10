@@ -2,14 +2,13 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
-
-.year {
-  background-color: #fbd94eed;
+}
+table .year {
+  background-color: #fbd94e ed;
   color: #0170f3;
   font-weight: 900;
   font-size: 18px;
   letter-spacing: 2px;
-}
 }
 thead {
   background: #0170f3;

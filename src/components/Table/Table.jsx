@@ -1,6 +1,6 @@
 import React from 'react';
 import moment from 'moment';
-import './Table.scss';
+import './Table.css';
 import { formatCurrency } from '../../utils/helper';
 
 const Table = ({ data }) => {
@@ -55,7 +55,7 @@ const Table = ({ data }) => {
     <table>
       <thead>
         <tr>
-          <th>Instl No</th>
+          <th>Installment No</th>
           <th>Month</th>
           <th>Principal</th>
           <th>Interest</th>
