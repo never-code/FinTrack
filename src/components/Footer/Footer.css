@@ -5,17 +5,16 @@
   letter-spacing: 3px;
   background-color: #1f5156;
 }
-
 a {
   padding: 10px;
   color: black;
 }
-a:hover{
+a:hover {
   color: whitesmoke;
 }
-.linkss{
+.linkss {
   font-size: 25px;
 }
-.follow{
+.follow {
   color: black;
 }
