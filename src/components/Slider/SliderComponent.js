@@ -1,5 +1,5 @@
 import React from 'react';
-import './Slider.scss';
+import './Slider.css';
 import { formatCurrency } from '../../utils/helper';
 
 const SliderComponent = ({ value, min, max, step, onChange, onBlur, onFocus, unit, name }) => (
