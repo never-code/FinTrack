@@ -1,5 +1,5 @@
 import React from 'react';
-import './Card.scss';
+import './Card.css';
 
 const Card = ({title, subTitle, value, className }) => (
   <div className={`card-container ${className}`}>

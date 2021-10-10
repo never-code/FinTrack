@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Currency.scss';
+import './Currency.css';
 
 const CurrencyContainer = ({ change }) => {
   const [currency, setCurrency] = useState(localStorage.getItem('currency') || 'INR');

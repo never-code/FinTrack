@@ -1,0 +1,12 @@
+.currency-container {
+  text-align: end;
+}
+.currency-container select {
+  cursor: pointer;
+  border: none;
+  background-color: gainsboro;
+  font-weight: 800;
+  color: var(--text-color);
+  font-size: 20px;
+  outline: none;
+}
