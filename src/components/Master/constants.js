@@ -45,7 +45,7 @@ export const CARDS = [
   },
   {
     title: STRING.TOTAKPAYMENT,
-    subTitle: `(${STRING.PRINCIPLE} + ${STRING.INTEREST})`,
+    subTitle: `(${STRING.PRINCIPAL} + ${STRING.INTEREST})`,
     key: 'totalPayebleAmount',
     className: 'total',
   },

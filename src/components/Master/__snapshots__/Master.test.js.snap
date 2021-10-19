@@ -854,7 +854,7 @@ exports[`Master  should render successfully 1`] = `
                         y="15"
                       >
                         <tspan>
-                          Principle
+                          Principal
                         </tspan>
                       </text>
                       <rect

@@ -94,11 +94,11 @@ const MasterContainer = () => {
 
   const { totalInterest, totalPayebleAmount, loanEMI } = finalResult;
   let totalInterestPercentage = 0;
-  let totalPrinciplePercentage = 0;
+  let totalPrincipalPercentage = 0;
   let monthlyBreakupData = 0;
   if (!isNaN(totalInterest) || !isNaN(totalPayebleAmount)) {
     totalInterestPercentage = totalInterest/totalPayebleAmount * 100;
-    totalPrinciplePercentage = 100 - totalInterestPercentage;
+    totalPrincipalPercentage = 100 - totalInterestPercentage;
     monthlyBreakupData = monthlyBreakup(loanAmount * 10000, loanEMI, interest);
   }
   const { data, categories } = getBarData(monthlyBreakupData);
@@ -129,7 +129,7 @@ const MasterContainer = () => {
         <div className="right">
           <Pie
             interest={totalInterestPercentage}
-            principle={totalPrinciplePercentage}
+            principal={totalPrincipalPercentage}
           />
         </div>
       </div>

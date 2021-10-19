@@ -61,16 +61,16 @@ export const formatCurrency = (amount, fraction = 2) => {
 let installmentNumber = 1;
 export const Breakup = (amount, emi, interestRate, arr = [], startMonth = 0) => {
   if (!amount || !emi || !interestRate) return [];
-  const principle = Math.ceil(emi - ((interestRate/12)/100*amount));
-  const interest = Math.ceil(emi - principle);
+  const principal = Math.ceil(emi - ((interestRate/12)/100*amount));
+  const interest = Math.ceil(emi - principal);
   const month = moment().add(startMonth, 'M').format('MMM, YYYY');
   const year = moment(month).format('YYYY');
-  amount = Math.ceil(amount - principle);
+  amount = Math.ceil(amount - principal);
   if (arr[year] === undefined) {
     arr[year] = [];
   }
   arr[year].push({
-    principle, interest, amount, month, installmentNumber: installmentNumber++
+    principal, interest, amount, month, installmentNumber: installmentNumber++
   });
   if (amount <= 0) {
     console.log(arr, "final")
@@ -84,25 +84,25 @@ export const monthlyBreakup = memoize(Breakup);
 
 export const getBarData = (breakup) => {
   const interest = [];
-  const principle = [];
+  const principal = [];
   const categories = [];
   const data = [];
   let count = 1;
   Object.keys(breakup).map(year => {
-    let principleTotal = 0;
+    let principalTotal = 0;
     let interestTotal = 0;
-    breakup[year].map(({ principle, interest }) => {
-      principleTotal += principle;
+    breakup[year].map(({ principal, interest }) => {
+      principalTotal += principal;
       interestTotal += interest;
     });
     categories.push(`Year ${year}`);
     interest.push(interestTotal);
-    principle.push(principleTotal);
+    principal.push(principalTotal);
   });
   data.push(
     {
-      name: 'Principle',
-      data: principle,
+      name: 'Principal',
+      data: principal,
     },
     {
       name: 'Interest',
