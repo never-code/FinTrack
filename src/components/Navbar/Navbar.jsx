@@ -9,20 +9,19 @@ function Navbar() {
         <nav className="navbar">
           <div className="nav-container">
             <NavLink exact to="/" className="nav-logo">
-              FINANCIAL ANALYSIS
-              {/* <i className="fas fa-code"></i> */}
+              FinTrack
             </NavLink>
   
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li className="nav-item">
                 <NavLink
                   exact
-                  to="/expensecal"
+                  to="/budget-tracker"
                   activeClassName="active"
                   className="nav-links"
                   onClick={handleClick}
                 >
-                  EXPENSE-CALCULATOR
+                  BUDGET-TRACKER
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -45,17 +44,6 @@ function Navbar() {
                   onClick={handleClick}
                 >
                   NEWS
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  exact
-                  to="/contact"
-                  activeClassName="active"
-                  className="nav-links"
-                  onClick={handleClick}
-                >
-                  CONTACT
                 </NavLink>
               </li>
             </ul>

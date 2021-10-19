@@ -3,8 +3,8 @@ import Highcharts from 'highcharts';
 import accessibility from 'highcharts/modules/variable-pie';
 
 accessibility(Highcharts);
-const Pie = ({ interest = 0, principal = 0, backgroundColor }) => {
-  console.log(interest, principal, backgroundColor, "##");
+const Pie = ({ interest = 0, principle = 0, backgroundColor }) => {
+  console.log(interest, principle , backgroundColor, "##");
   useEffect(() => {
     Highcharts.chart('container', {
       chart: {
@@ -44,8 +44,8 @@ const Pie = ({ interest = 0, principal = 0, backgroundColor }) => {
           colorByPoint: true,
           data: [
             {
-              name: 'Principal',
-              y: principal,
+              name: 'Principle',
+              y: principle,
             },
             {
               name: 'Interest',

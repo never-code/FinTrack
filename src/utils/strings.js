@@ -1,5 +1,5 @@
 const STRING = {
-  PRINCIPAL: 'Principal',
+  PRINCIPLE: 'Principle',
   INTEREST: 'Interest',
   TENURE: 'Tenure',
   RATE: 'Rate',

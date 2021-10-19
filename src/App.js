@@ -7,7 +7,7 @@ import { Emi } from "./components/Pages/Emi";
 import {News} from "./components/Pages/News";
 import { Contact } from "./components/Pages/Contact";
 import { First } from "./components/Pages/first";
-import Footer from "./components/Footer/Footer";
+// import Footer from "./components/Footer/Footer";
 const App = () => {
     return (
    
@@ -19,14 +19,14 @@ const App = () => {
           <div className="pages">
             <Switch>
             <Route exact path="/" component={First} />
-              <Route exact path="/expensecal" component={Home} />
+              <Route exact path="/budget-tracker" component={Home} />
               <Route path="/emi" component={Emi} />
               <Route path="/news" component={News} />
               <Route path="/contact" component={Contact} />
             </Switch>
           </div>
         </Router>
-        <Footer/>
+        {/* <Footer/> */}
           </>
         </div>
     )

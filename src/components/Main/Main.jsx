@@ -5,6 +5,7 @@ import { ExpenseTrackerContext } from '../../context/context';
 import Form from './Form/Form';
 import InfoCard from '../InfoCard';
 import List from './List/List';
+import './Main.css';
 const Main = () => {
     const classes = useStyles();
     const { balance } = useContext(ExpenseTrackerContext);
@@ -31,6 +32,7 @@ const Main = () => {
             </CardContent>
 
         </Card>
+
     )
 }
 

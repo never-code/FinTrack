@@ -8,7 +8,6 @@ import Loader from '../Loader';
 import './News.css';
 import bitcoin from '../../assets/bitcoin.svg';
 import { Img } from '../../common';
-import { NavLink } from "react-router-dom";
 
 const demoImage = 'https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News';
 
@@ -17,8 +16,6 @@ const { Option } = Select;
 
 
 export const News = ({ simplified }) => {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
   const [newsCategory, setNewsCategory] = useState('Cryptocurrency');
   const { data } = useGetCryptosQuery(100);
   const { data: cryptoNews } = useGetCryptoNewsQuery({ newsCategory, count: simplified ? 6 : 12 });
@@ -40,16 +37,6 @@ export const News = ({ simplified }) => {
           <Option value="Cryptocurency">Cryptocurrency</Option>
           {data?.data?.coins?.map((currency) => <Option value={currency.name}>{currency.name}</Option>)}
         </Select>
-        <NavLink
-                  exact
-                  to="/#  "
-                  activeClassName="active"
-                  className="nav-links"
-                  onClick={handleClick}
-                >
-                  Top 100 Crypto Currency
-                </NavLink>
-        {/* <h1>Top 100 Crypto Currency</h1> */}
       </Col>
     )}
     {cryptoNews.value.map((news, i) => (
