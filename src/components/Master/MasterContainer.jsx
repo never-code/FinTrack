@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './master.scss';
+import './master.css';
 import Slider from '../Slider';
 import Currency from '../Currency';
 import Title from '../../HOC/Title';

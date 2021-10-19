@@ -1,6 +1,6 @@
 import React from "react";
 import Master from "../Master";
-import './emi.scss';
+import './emi.css';
 export const Emi = () => {
   return (
     <>

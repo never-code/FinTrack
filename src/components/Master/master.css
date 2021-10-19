@@ -51,8 +51,8 @@
     width: 100%;
     border-bottom: 3px solid var(--text-color);
     border-right: none;
- }
+  }
   .master-container main .right-section {
     width: 100%;
- }
+  }
 }

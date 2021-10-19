@@ -14,8 +14,6 @@ body {
   box-sizing: border-box;
   font-family: 'Baloo Tamma 2', cursive;
 }
-
-
 h2.background {
   position: relative;
   z-index: 1;
@@ -23,48 +21,50 @@ h2.background {
   height: 30px;
   font-weight: 100;
   letter-spacing: 3px;
-  &:before {
-      border-top: 2px solid #dfdfdf;
-      content:"";
-      margin: 0 auto;
-      position: absolute;
-      top: 50%; left: 0; right: 0; bottom: 0;
-      width: 95%;
-      z-index: -1;
-  }
-
-  span { 
-    background: var(--app-background); 
-    padding: 0 5px; 
-  }
-  .sub-title {
-    font-size: 13px;
-    letter-spacing: 1px;
-    padding: 3px;
-    &::before {
-      content: "(";
-    }
-    &::after {
-      content: ")";
-    }
-  }
-
 }
-
-h2.double:before { 
+h2.background:before {
+  border-top: 2px solid #dfdfdf;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+h2.background span {
+  background: var(--app-background);
+  padding: 0 5px;
+}
+h2.background .sub-title {
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 3px;
+}
+h2.background .sub-title::before {
+  content: "(";
+}
+h2.background .sub-title::after {
+  content: ")";
+}
+h2.double:before {
   /* this is just to undo the :before styling from above */
-  border-top: none; 
+  border-top: none;
 }
-
 h2.double:after {
   border-bottom: 1px solid blue;
   -webkit-box-shadow: 0 1px 0 0 red;
   -moz-box-shadow: 0 1px 0 0 red;
   box-shadow: 0 1px 0 0 red;
   content: "";
-  margin: 0 auto; /* this centers the line to the full width specified */
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
   position: absolute;
-  top: 45%; left: 0; right: 0;
+  top: 45%;
+  left: 0;
+  right: 0;
   width: 95%;
   z-index: -1;
 }
@@ -74,7 +74,7 @@ h2.double:after {
   margin: 15px 10px 10px 10px;
   padding: 10px;
   border-radius: 10px;
-    box-shadow: inset 2px 2px 8px 0px #5e5555a6;
+  box-shadow: inset 2px 2px 8px 0px #5e5555a6;
 }
 .section:hover, .section:focus {
   border: solid 2px var(--section-border);
@@ -82,9 +82,7 @@ h2.double:after {
   cursor: pointer;
   box-shadow: 2px 6px 20px 0px #a49898;
   outline: none;
-
 }
-
 @media only screen and (max-width: 700px) {
   .section:hover {
     border-radius: 1px;
