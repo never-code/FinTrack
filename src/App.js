@@ -7,7 +7,6 @@ import { Emi } from "./components/Pages/Emi";
 import {News} from "./components/Pages/News";
 import { Contact } from "./components/Pages/Contact";
 import { First } from "./components/Pages/first";
-// import Footer from "./components/Footer/Footer";
 const App = () => {
     return (
    
@@ -26,7 +25,6 @@ const App = () => {
             </Switch>
           </div>
         </Router>
-        {/* <Footer/> */}
           </>
         </div>
     )
